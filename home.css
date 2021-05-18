@@ -1,0 +1,26 @@
+* {
+    font-family: Futura PT, Robotom sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url("assets/Background main.png");
+    padding: 50px;
+}
+.waarden{
+    background-image: url("waardenbg.png");
+}
+.nav-link{
+    padding: 20px 30px;
+    margin-left: 30px;
+}
+nav div ul li a:hover{
+    background-color: #3293f8;
+}
+nav div ul li a.active{
+    color: #699adc;
+    font-weight: bold;
+}
+@media(max-width: 575.98px) {
+
+}
