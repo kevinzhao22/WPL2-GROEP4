@@ -1,0 +1,51 @@
+* {
+    font-family: Futura PT, Robotom sans-serif;
+    box-sizing: border-box;
+}
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+main{
+    background-image: url("assets/Background-main.png");
+    padding: 50px;
+}
+section, .waarden{
+    background-image: url("assets/waardenbg.png");
+    padding: 50px;
+}
+nav div ul li a.active{
+    color: #699adc;
+    font-weight: bold;
+}
+@media(max-width: 575.98px) {
+
+}
+.navbar-nav {
+    display: flex;
+    justify-content: right;
+    margin-left: 160px;
+}
+
+nav div a {
+    padding: 20px 30px;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+nav a.active, nav a:hover {
+    background-color: #3293f8;
+    color: #343a40
+}
+
+nav a.active {
+    color: #3293f8;
+    font-weight: bold;
+    padding: 10px;
+}
+.bordertop {
+    border: 1px solid black;
+}
+.show-cart li {
+    display: flex;
+}
