@@ -5,106 +5,195 @@
     <title>Productpagina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="productpagina_style.css">
 </head>
 <body>
-<nav>
-    <img class="logo" src="Assets/Logo.png" alt="logo">
-    <a href="#">HOME</a>
-    <a href="#" class="active">PRODUCTS</a>
-    <a href="#">STORIES</a>
-    <a href="#">CONTACT</a>
-    <i class="material-icons">account_circle</i>
-    <i class="material-icons">shopping_cart</i>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">
+            <img class="d-inline-block align-top logo" src="assets/Logo%2520landscape.png" alt="logo"></a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="productpagina.html">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">STORIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+            <i class="material-icons">account_circle</i>
+            <i class="material-icons">shopping_cart</i>
+        </div>
+    </div>
 </nav>
 <main>
-    <header>
-        <img class="product" src="Assets/Productfoto1.png" alt="foto van de fles"/>
-        <h1>All-in-one smart bottle</h1>
-        <h2>A bottle for every drink for every temperature.</h2>
-        <h2>€ 99,99</h2>
-        <button>More details</button>
-        <button>Buy now</button>
+    <header class="container">
+        <div class="row">
+            <img class="product col-4" src="assets/Productfoto1.png" alt="foto all-in-one smart bottle"/>
+            <div class="col-8">
+                <h1 class="header">All-in-one smart bottle</h1>
+                <h2 class="header">A bottle for every drink for every temperature.</h2>
+                <h2 class="header">€ 99,99</h2>
+                <button>More details</button>
+                <button>Buy now</button>
+            </div>
+        </div>
     </header>
-    <section class="reviews">
-        <h1>Reviews</h1>
-        <h3>Voornaam Achternaam</h3>
-        <p>Heel handige fles, zeker een aanrader.</p>
-        <h2>Reviews</h2>
-        <h3>Voornaam Achternaam</h3>
-        <p>Heel handige fles, zeker een aanrader.</p>
-        <h2>Reviews</h2>
-        <h3>Voornaam Achternaam</h3>
-        <p>Heel handige fles, zeker een aanrader.</p>
-        <button>Write a review</button>
+    <section class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="review">Reviews</h1>
+                <h2>Peter Peeters</h2>
+                <p>Heel handige fles, zeker een aanrader. Het bespaard me een hele hoop flessen die ik eerst altijd
+                    moest
+                    meesleuren. Ook blijft mijn drank altijd op de juiste temperatuur. </p>
+                <h2>Wim Dejonghe</h2>
+                <p>Heb de survivor pakket gekocht, zo voel ik me toch al een stuk veiliger als ik in de bergen ga
+                    wandelen. De
+                    filter vind ik ook echt een pluspunt aan deze drinkfles, als mijn water op is kan ik deze gewoon
+                    bijvullen
+                    in een rivier of vijver die ik tegenkom.</p>
+                <h2>Sarah Claes</h2>
+                <p>Echt de perfecte smart bottle voor mij. Al mijn dranken zijn altijd op de juiste temperaturen, of ik
+                    nu een
+                    koude of warme drank meepak.</p>
+                <button>Write a review</button>
+            </div>
+        </div>
     </section>
     <section>
-        <img class="banner" src="Assets/Hiking1.png" alt="hiker op een berg"/></section>
-    <section>
-        <h1>The perfect temperature for your drink</h1>
-        <p>Select any temperature you want between room temp and boiling, and the water bottle will keep it precisely
-            there ALL DAY! Now, you can have your water at the perfect temp from the first cup to the very last. It
-            makes every sip perfect. Our powerful heating element allows you to enjoy your cooled water for a long
-            period during a hot day!</p>
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula sollicitudin,
-            erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim sodales,
-            velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula sollicitudin,
-            erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim sodales,
-            velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula sollicitudin,
-            erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim sodales,
-            velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula sollicitudin,
-            erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim sodales,
-            velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+        <img class="banner" src="assets/Hiking1.png" alt="banner groep hikers"/>
+    </section>
+    <section class="container">
+        <div class="row">
+            <img class="col-4 img-fluid" src="assets/Temperatuur1.png" alt="temperatuur knoppen"/>
+            <div class="col-8">
+                <h1>The perfect temperature for your drink</h1>
+                <p>Select any temperature you want between room temp and boiling, and the all-in-one smart bottle will
+                    keep
+                    it precisely there ALL DAY! Now, you can have your drink at the perfect temperature from the first
+                    cup
+                    to the very last. It makes every sip perfect. Our powerful heating element allows you to enjoy your
+                    cooled drink for a long period during a hot day!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
+                    sollicitudin,
+                    erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim
+                    sodales,
+                    velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+            </div>
+            <img class="col-4 img-fluid" src="assets/Temperatuur2.png" alt="temperatuur display"/>
+        </div>
+        <div class="row">
+            <img class="col-4 img-fluid" src="assets/Filter.png" alt="filter"/>
+            <div class="col-8">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
+                    sollicitudin,
+                    erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim
+                    sodales,
+                    velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
+                    sollicitudin,
+                    erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim
+                    sodales,
+                    velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+            </div>
+            <img class="col-4 img-fluid" src="assets/LedLamp.png" alt="LED lamp"/>
+        </div>
+        <div class="row">
+            <img class="col-4 img-fluid" src="assets/Handvat.png" alt="handvat"/>
+            <div class="col-8">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
+                    sollicitudin,
+                    erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim
+                    sodales,
+                    velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+            </div>
+        </div>
     </section>
     <section>
         <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col-2 pakket"><img src="assets/BeginnerPakket.png" height="141" width="120"
+                                           alt="beginnerpakket"/>
+            </div>
+            <div class="col-2 pakket"><img src="assets/SurvivorPakket.png" height="142" width="174"
+                                           alt="survivorpakket"/>
+            </div>
+            <div class="col-2 pakket"><img src="assets/AdventurePakket.png" height="168" width="221"
+                                           alt="adventurepakket"/>
+            </div>
         </div>
         <div class="row">
-            <div class="col">Beginner</div>
-            <div class="col">Survivor</div>
-            <div class="col">Adventure</div>
+            <div class="col-2 pakket">Beginner</div>
+            <div class="col-2 pakket">Survivor</div>
+            <div class="col-2 pakket">Adventure</div>
         </div>
     </section>
     <section>
-        <img src="Assets/Hiking2.jpg" alt="groep hikers" height="500" width="750"/>
+        <img class="banner" src="assets/Hiking2.png" alt="hiker aan het drinken"/>
     </section>
-    <section>
-        <div>
-            <img src="">
-            <h1>Beginner</h1>
-            <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim sodales, velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
-
-            <button>Add to cart</button>
+    <section class="container">
+        <div class="row">
+            <img class="col-5" src="assets/BeginnerPakket.png" height="141" width="120" alt="beginnerpakket"/>
+            <div class="col-7">
+                <h1>Beginner</h1>
+                <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
+                    sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat
+                    ut
+                    dignissim sodales, velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+                <button>Add to cart</button>
+            </div>
         </div>
-        <div>
-            <img src="">
-            <h1>Survivor</h1>
-            <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim sodales, velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
-
-            <button>Add to cart</button>
+        <div class="row">
+            <img class="col-5" src="assets/SurvivorPakket.png" height="142" width="174" alt="survivorpakket"/>
+            <div class="col-7">
+                <h1>Survivor</h1>
+                <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
+                    sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat
+                    ut
+                    dignissim sodales, velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+                <button>Add to cart</button>
+            </div>
         </div>
-        <div>
-            <img src="">
-            <h1>Adventure</h1>
-            <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat ut dignissim sodales, velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
-
-            <button>Add to cart</button>
+        <div class="row">
+            <img class="col-5" src="assets/AdventurePakket.png" height="168" width="221" alt="adventurepakket"/>
+            <div class="col-7">
+                <h1>Adventure</h1>
+                <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
+                    sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat
+                    ut
+                    dignissim sodales, velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
+                <button>Add to cart</button>
+            </div>
         </div>
     </section>
 </main>
 </body>
-<footer>
-
+<footer class="bordertop">
+    <div class="copyright text-center">
+        <span>© 2021 Hike 'n Seek</span>
+        <span class="rechts"><img src="assets/FooterSocials.png" alt="sm" height="16" width="59"></span>
+    </div>
+    <div class="copyright text-right">
+    </div>
 </footer>
 </html>

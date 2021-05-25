@@ -6,7 +6,6 @@
 nav {
     display: flex;
     justify-content: right;
-    margin-left: 160px;
 }
 
 nav a{
@@ -26,22 +25,49 @@ nav a.active {
     font-weight: bold;
 }
 
+.nav-link{
+    padding: 20px 30px;
+    margin-left: 30px;
+}
+nav div ul li a:hover{
+    background-color: #3293f8;
+}
+
 img.logo {
     height: 75px;
     width: 315px;
 }
 
-img.product {
-    float: left;
-    height: 722px;
-    padding-left: 100px;
-    margin-top: 50px;
+h1.header {
+    font-size: 60px;
 }
 
-.reviews {
-    clear: both;
+h2.header {
+    font-size: 42px;
+}
+
+img.product {
+    float: left;
+    height: 480px;
+    padding-left: 100px;
+}
+
+.review {
+    border-bottom: 1px solid black;
 }
 
 img.banner {
     width: 100%;
+    height: 500px;
+    margin: 30px 0 30px 0;
+}
+
+.pakket {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.bordertop {
+    border-top: 1px solid black;
+    margin-top: 10px;
 }
