@@ -10,27 +10,27 @@
     <link rel="stylesheet" href="productpagina_style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
-    <div class="container">
-        <a class="navbar-brand" href="home.html">
-            <img class="d-inline-block align-top logo" src="assets/Logo%2520landscape.png" alt="logo"></a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav mr-auto ">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">HOME</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="productpagina.html">PRODUCTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">STORIES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                </li>
-            </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-white container">
+    <a class="navbar-brand" href="#"><img src="assets/Logo%2520landscape.png" width="315" height="60"
+                                          class="d-inline-block align-top"
+                                          alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Products</a>
+            <a class="nav-item nav-link" href="#">Stories</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
             <i class="material-icons">account_circle</i>
-            <i class="material-icons">shopping_cart</i>
+            <div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                        class="total-count"></span>)
+                </button>
+                <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
         </div>
     </div>
 </nav>
@@ -38,11 +38,11 @@
     <header class="container">
         <div class="row">
             <img class="product col-4" src="assets/Productfoto1.png" alt="foto all-in-one smart bottle"/>
-            <div class="col-8">
+            <div class="col-8 headercontainer">
                 <h1 class="header">All-in-one smart bottle</h1>
                 <h2 class="header">A bottle for every drink for every temperature.</h2>
                 <h2 class="header">€ 99,99</h2>
-                <button>More details</button>
+                <button><a href="#MoreDetails">More details</a></button>
                 <button>Buy now</button>
             </div>
         </div>
@@ -73,9 +73,9 @@
         <img class="banner" src="assets/Hiking1.png" alt="banner groep hikers"/>
     </section>
     <section class="container">
-        <div class="row">
-            <img class="col-4 img-fluid" src="assets/Temperatuur1.png" alt="temperatuur knoppen"/>
-            <div class="col-8">
+        <div class="row" id="MoreDetails">
+            <img class="col-4 img-fluid functiesfotos" src="assets/Temperatuur1.png" alt="temperatuur display"/>
+            <div class="col-8 functies">
                 <h1>The perfect temperature for your drink</h1>
                 <p>Select any temperature you want between room temp and boiling, and the all-in-one smart bottle will
                     keep
@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-8">
+            <div class="col-8 functies">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
                     sollicitudin,
@@ -94,11 +94,11 @@
                     sodales,
                     velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
             </div>
-            <img class="col-4 img-fluid" src="assets/Temperatuur2.png" alt="temperatuur display"/>
+            <img class="col-4 img-fluid functiesfotos" src="assets/Temperatuur2.png" alt="temperatuur knoppen"/>
         </div>
         <div class="row">
-            <img class="col-4 img-fluid" src="assets/Filter.png" alt="filter"/>
-            <div class="col-8">
+            <img class="col-4 img-fluid functiesfotos" src="assets/Filter.png" alt="filter"/>
+            <div class="col-8 functies">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
                     sollicitudin,
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-8">
+            <div class="col-8 functies">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
                     sollicitudin,
@@ -116,11 +116,11 @@
                     sodales,
                     velit tellus faucibus turpis, ut fringilla erat eros eu lacus.</p>
             </div>
-            <img class="col-4 img-fluid" src="assets/LedLamp.png" alt="LED lamp"/>
+            <img class="col-4 img-fluid functiesfotos" src="assets/LedLamp.png" alt="LED lamp"/>
         </div>
         <div class="row">
-            <img class="col-4 img-fluid" src="assets/Handvat.png" alt="handvat"/>
-            <div class="col-8">
+            <img class="col-4 img-fluid functiesfotos" src="assets/Handvat.png" alt="handvat"/>
+            <div class="col-8 functies">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
                     sollicitudin,
@@ -143,18 +143,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-2 pakket">Beginner</div>
-            <div class="col-2 pakket">Survivor</div>
-            <div class="col-2 pakket">Adventure</div>
+            <div class="col-2 pakket"><a href="#Beginner">Beginner</a></div>
+            <div class="col-2 pakket"><a href="#Survivor">Survivor</a></div>
+            <div class="col-2 pakket"><a href="#Adventure">Adventure</a></div>
         </div>
     </section>
     <section>
         <img class="banner" src="assets/Hiking2.png" alt="hiker aan het drinken"/>
     </section>
     <section class="container">
-        <div class="row">
-            <img class="col-5" src="assets/BeginnerPakket.png" height="141" width="120" alt="beginnerpakket"/>
-            <div class="col-7">
+        <div class="row" id="Beginner">
+            <img class="col-5 pakketdetailsfotos" src="assets/BeginnerPakket.png" height="141" width="120" alt="beginnerpakket"/>
+            <div class="col-7 pakketdetails">
                 <h1>Beginner</h1>
                 <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
                     sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat
@@ -163,9 +163,9 @@
                 <button>Add to cart</button>
             </div>
         </div>
-        <div class="row">
-            <img class="col-5" src="assets/SurvivorPakket.png" height="142" width="174" alt="survivorpakket"/>
-            <div class="col-7">
+        <div class="row" id="Survivor">
+            <img class="col-5 pakketdetailsfotos" src="assets/SurvivorPakket.png" height="142" width="174" alt="survivorpakket"/>
+            <div class="col-7 pakketdetails">
                 <h1>Survivor</h1>
                 <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
                     sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat
@@ -174,9 +174,9 @@
                 <button>Add to cart</button>
             </div>
         </div>
-        <div class="row">
-            <img class="col-5" src="assets/AdventurePakket.png" height="168" width="221" alt="adventurepakket"/>
-            <div class="col-7">
+        <div class="row" id="Adventure">
+            <img class="col-5 pakketdetailsfotos" src="assets/AdventurePakket.png" height="168" width="221" alt="adventurepakket"/>
+            <div class="col-7 pakketdetails">
                 <h1>Adventure</h1>
                 <p>Fusce convallis nisl ut purus vestibulum tempus ut non leo. Etiam tincidunt, ligula at vehicula
                     sollicitudin, erat justo commodo massa, eu viverra magna urna auctor ex. Phasellus scelerisque, erat
@@ -191,7 +191,7 @@
 <footer class="bordertop">
     <div class="copyright text-center">
         <span>© 2021 Hike 'n Seek</span>
-        <span class="rechts"><img src="assets/FooterSocials.png" alt="sm" height="16" width="59"></span>
+        <span><img class="socials" src="assets/FooterSocials.png" alt="socials"></span>
     </div>
     <div class="copyright text-right">
     </div>
