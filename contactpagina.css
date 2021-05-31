@@ -1,20 +1,25 @@
-nav {
+.navbar-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
+    margin-left: 160px;
 }
-nav a{
-    color: #000;
+
+nav div a {
     padding: 20px 30px;
     text-decoration: none;
     margin-right: 40px;
 }
+
 nav a.active, nav a:hover {
-    background-color: #ddd;
-    color: #343a40
-}
-nav a.active {
-    color: #699ADC;
+    background-color: #3293f8;
+    color: #343a40;
     font-weight: bold;
+}
+
+nav a.active {
+    color: #3293f8;
+    font-weight: bold;
+    padding: 10px;
 }
 main {
     background-image: url("")
@@ -47,4 +52,7 @@ nav img {
 
 nav {
     margin-left: 5px;
+}
+.bordertop {
+    border-top: 1px solid black;
 }
