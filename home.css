@@ -1,0 +1,88 @@
+* {
+    font-family: Futura PT, Roboto sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    background-image: url("../assets/Background-main.png");
+    padding: 50px;
+}
+
+section, .waarden {
+    background-image: url("../assets/waardenbg.png");
+    padding: 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: right;
+    margin-left: 160px;
+}
+
+.nav-item.nav-link {
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+nav a.active, nav a:hover {
+    background-color: #3293f8;
+    color: #343a40;
+}
+
+.bordertop {
+    border: 1px solid black;
+}
+
+.show-cart li {
+    display: flex;
+}
+
+h1 {
+    color: #699ADC;
+}
+
+.iconen {
+    width: 110px;
+    height: 107px;
+}
+
+.tel {
+    width: 21px;
+    height: 18px;
+}
+
+.mail {
+    width: 31px;
+    height: 21px;
+}
+
+.blok {
+    width: 795px;
+    height: 350px;
+}
+
+.top-left {
+    position: absolute;
+    top: 125px;
+    left: 75px;
+    font-size: 33px;
+    color: white;
+    font-weight: bolder;
+}
+
+.hoofding {
+    height: 500px;
+}
+
+.logo {
+    width: 315px;
+    height: 60px;
+}
