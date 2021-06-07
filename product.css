@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+.background {
+    background-image: url("../assets/Background.png");
+}
+
 /* Navigation */
 
 .navbar-nav {
@@ -23,10 +27,15 @@ nav a.active, nav a:hover {
     color: #343a40;
 }
 
+.logo {
+    width: 315px;
+    height: 60px;
+}
+
 /* Header */
 
 .headercontainer {
-    padding: 90px 0 90px 0;
+    padding: 195px 0 195px 0;
 }
 
 h1.header {
@@ -39,7 +48,7 @@ h2.header {
 
 img.product {
     float: left;
-    height: 480px;
+    height: 650px;
 }
 
 /* Button */
@@ -87,11 +96,13 @@ img.banner {
 /* Functie */
 
 .functies {
-    padding: 80px
+    padding: 80px;
 }
 
 .functiesfotos {
     height: 350px;
+    background-color: #ffffff;
+    padding: 0;
 }
 
 /* Pakketten */
@@ -104,8 +115,8 @@ img.banner {
     background-color: #ffffff;
 }
 
-.pakketfoto {
-    height: 200px;
+.pakketfotokader {
+    height: 300px;
     text-align: center;
     border: 1px solid black;
     margin: 30px 24px 0 24px;
@@ -113,24 +124,84 @@ img.banner {
     background-color: #ffffff;
 }
 
+.pakketfoto {
+    height: 300px;
+}
+
 .pakketdetails {
-    padding: 80px;
+    padding: 170px;
 }
 
 .pakketdetailsfotos {
-    height: 350px;
-    background-color: #ffffff;
+    height: 500px;
 }
 
 /* Footer */
 
 .bordertop {
     border-top: 1px solid black;
-    margin-top: 10px;
 }
 
-.socials {
-    height: 16px;
-    width: 59px;
-    float: right;
+@media(max-width: 990px) {
+    .functies {
+        padding: 60px 5px 5px 10px;
+    }
+
+    .functiesfotos {
+        height: 270px;
+    }
+
+    .pakketfotokader {
+        height: 200px;
+    }
+
+    .pakketfoto {
+        height: 180px;
+    }
+
+    .pakketdetails {
+        padding: 75px 50px 85px 50px;
+    }
+
+    .pakketdetailsfotos {
+        height: 350px;
+    }
+}
+
+@media(max-width: 760px) {
+    .headercontainer {
+        padding: 110px 0 110px 0;
+    }
+
+    img.product {
+        height: 550px;
+    }
+
+    img.banner {
+        height: 300px;
+    }
+
+    .functies {
+        padding: 25px 0 5px 10px;
+    }
+
+    .functiesfotos {
+        height: 200px;
+    }
+
+    .pakketfotokader {
+        height: 150px;
+    }
+
+    .pakketfoto {
+        height: 120px;
+    }
+
+    .pakketdetails {
+        padding: 10px 0 30px 0;
+    }
+
+    .pakketdetailsfotos {
+        height: 200px;
+    }
 }
