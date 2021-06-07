@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/contactpagina.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white container">
+    <a class="navbar-brand bg-white" href="#"><img src="../assets/Logo-landscape.png"
+                                                   class="d-inline-block align-top logo"
+                                                   alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="home.html">Home</a>
+            <a class="nav-item nav-link" href="product.html">Products</a>
+            <a class="nav-item nav-link" href="https://www.thehikinglife.com">Stories</a>
+            <a class="nav-item nav-link" href="contactpagina.html">Contact</a>
+            <a class="nav-item nav-link" href="signin.html">Login</a>
+            <div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                        class="total-count"></span>)
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <br><H3>CONTACTINFO</H3>
+    <br>
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-sm">
+                <img class="kaart" src="../assets/kaart.png" alt="kaart" >
+            </div>
+            <div class="col-sm">
+                Hike 'n Seek<br>
+                Kempische Steenweg 293<br>
+                3500 Hasselt<br>
+                089 12 34 56<br>
+                info@hikenseek.com
+                <br><br>
+                <h6>Business hours</h6>
+                <p id="uren">
+                    Mon: 9:00 - 16:00 <br>
+                    Tue: 9:00 - 16:00 <br>
+                    Wen: 9:00 - 16:00 <br>
+                    Thu: 9:00 - 16:00 <br>
+                    Fri: 9:00 - 16:00<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+</main>
+<br>
+<section><br><h3>CONTACTFORMULIER</h3><br>
+    <form action="/action_page.php">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                    <label for="voornaam">First name</label><br>
+                    <input type="text" id="voornaam" name="voornaam" required><br><br>
+                    <label for="naam">Last name</label><br>
+                    <input type="text" id="naam" name="naam" required><br><br>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="onderwerp">Subject</label><br>
+                    <input type="onderwerp" id="onderwerp" name="onderwerp" required><br><br>
+                </div>
+                <div class="col">
+                    <label for="commentaar">Your message</label><br>
+                    <textarea cols="50" rows="11" id="commentaar" name="Commentaar" wrap="hard" required></textarea><br>
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+</section>
+<section class="container-fluid bg-secondary text-dark pt-4 w=100">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-2 list-unstyled p-2">
+                <li class="p-1">Home</li>
+                <li class="p-1">Product</li>
+                <li class="p-1">Contact</li>
+                <li class="p-1">Sign in</li>
+            </ul>
+            <ul class="col-md-2 list-unstyled p-2">
+                <li class="p-1">Search</li>
+                <li class="p-1">Shipping Information</li>
+                <li class="p-1">Costumer Returns</li>
+                <li class="p-1">Privacy Policy</li>
+                <li class="p-1">Terms of Service</li>
+                <li class="p-1">About Us</li>
+                <li class="p-1">FAQs</li>
+                <li class="p-1">Media Inquires</li>
+            </ul>
+            <ul class="col-md-2 list-unstyled p-2">
+                <li class="p-1">info@hikenseek.com</li>
+                <li class="p-1">Hike ’n Seek / Adventure Corporation</li>
+                <li class="p-1">Hogeschool PXL</li>
+                <li class="p-1">Elfde-Liniestraat 24</li>
+                <li class="p-1">B-3500 HASSELT</li>
+            </ul>
+            <div class="col-md-6 list-unstyled p-2">
+                <p class="p-1">Join our mailing list</p>
+
+                <img class="img-fluid" src="../assets/telefoon.png" alt="telefoon" height="21" width="18">
+                <p class="p-1">089 432 235 535</p>
+                <form>
+                    <label for="mail2">Mailadres</label>
+                    <input type="email" name="Emailadres" id="mail2"><img class="img-fluid"
+                                                                          src="../assets/email.png"
+                                                                          alt="email" height="21"
+                                                                          width="31">
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bordertop">
+    <div class="copyright text-center">
+        <span>© 2021 Hike 'n Seek</span>
+    </div>
+    <div class="copyright text-right">
+    </div>
+</div>
+</body>
+</html>

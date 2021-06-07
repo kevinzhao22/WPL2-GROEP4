@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loginstart</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/335f4844d9.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white container">
+        <a class="navbar-brand bg-white" href="#"><img src="../assets/Logo-landscape.png"
+                                              class="d-inline-block align-top logo"
+                                              alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="home.html">Home</a>
+                <a class="nav-item nav-link" href="product.html">Products</a>
+                <a class="nav-item nav-link" href="https://www.thehikinglife.com">Stories</a>
+                <a class="nav-item nav-link" href="contactpagina.html">Contact</a>
+                <a class="nav-item nav-link" href="signin.html">Login</a>
+                <div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                            class="total-count"></span>)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+<main class="container-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-1">
+                <h1>Sign in</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 offset-lg-1 col-md-4">
+                <h4>E-mailadress:</h4>
+                <form>
+                    <label for="mail"></label>
+                    <input type="email" name="Emailadres" id="mail"><br><br>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 offset-lg-1 col-md-4">
+                <h4>Password:</h4>
+                <form>
+                    <label for="password"></label>
+                    <input type="password" name="Wachtwoord" id="password"><br><br>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-lg-1 col-md-1 col-sm-1">
+                <p class="underline">Reset</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 offset-lg-5 col-md-3 offset-md-4 col-sm-2">
+                <a class="box text-center signin" href="loggedin.html">Sign in</a>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-2">
+                <a class="underline" href="forgotpassword.html">Forget password?</a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 offset-lg-2 col-md-4">
+                <p>No account yet? <a class="underline" href="signup.html">Sign up here!</a></p>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid bordertop pt-4">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <ul class="lijst">
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>Contact</li>
+                    <li>Sign in</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <ul class="lijst">
+                    <li>Search</li>
+                    <li>Shipping Information</li>
+                    <li>Costumer Returns</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <ul class="lijst">
+                    <li>Terms of Service</li>
+                    <li>About Us</li>
+                    <li>FAQs</li>
+                    <li>Media Inquires</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <ul class="lijst">
+                    <li>info@hikenseek.com</li>
+                    <li>Hike ’n Seek / Adventure Corporation</li>
+                    <li>Hogeschool PXL</li>
+                    <li>Elfde-Liniestraat 24</li>
+                    <li>B-3500 HASSELT</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 offset-lg-1 col-md-6">
+                <p>Join our mailing list</p>
+
+                <p><img src="../assets/telefoon.png" alt="telefoon" height="21" width="18"> 089 432 235 535</p>
+                <form>
+                    <label for="mail2"></label>
+                    <input type="email" name="Emailadres" id="mail2"><img class="img-fluid"
+                                                                          src="../assets/email.png"
+                                                                          alt="email" height="21"
+                                                                          width="31">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="bordertop">
+    <div class="copyright text-center">
+        <span>© 2021 Hike 'n Seek</span>
+    </div>
+
+    <div class="copyright text-right">
+
+    </div>
+</div>
+</body>
+</html>
