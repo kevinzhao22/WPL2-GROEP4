@@ -1,0 +1,99 @@
+/* afmetingen */
+.logo {
+    width: 315px;
+    height: 60px;
+}
+
+
+h1 {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 4px 15px 5px 15px;
+}
+
+.lijst {
+    list-style-type: none;
+}
+
+.rechts {
+    float: right;
+}
+
+.bordertop {
+    border-top: 1px solid #000000;
+}
+
+.borderleft {
+    border-left: 1px solid #000000;
+}
+
+.balk {
+    width: 60%;
+}
+
+/* link */
+a {
+    color: #000000;
+}
+a:hover {
+    color: #0000ff;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a.signin {
+    font-size: 25px;
+}
+
+a.signin:hover {
+    background-color: #3293f8;
+    text-decoration: none;
+    color: #000000;
+    border-color: #3293f8;
+}
+
+
+/* navigatie*/
+.navbar-nav {
+    display: flex;
+    justify-content: right;
+    margin-left: 160px;
+}
+.nav-item.nav-link{
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+nav a.active, nav a:hover {
+    background-color: #3293f8;
+    color: #343a40;
+}
+/* home */
+* {
+    font-family: Futura PT, Robotom sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url("../assets/Background-main.png");
+    padding: 50px;
+}
+.waarden{
+    background-image: url("../assets/waardenbg.png");
+}
+@media(max-width: 575.98px) {
+
+}
